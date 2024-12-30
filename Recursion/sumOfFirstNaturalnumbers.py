@@ -23,5 +23,14 @@ def sumOnNumbers(n,sum):
         return sum+n
     return sumOnNumbers(n-1,sum+n)
 
-a = sumOnNumbers(3,0)
+
+
+#using funtional method
+
+def sumUsingfuntionalMethod(n):
+    if n ==0:
+        return 0 
+    return n+sumUsingfuntionalMethod(n-1)
+
+a = sumUsingfuntionalMethod(3)
 print(a)
